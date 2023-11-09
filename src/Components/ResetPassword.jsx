@@ -4,11 +4,13 @@ import "../index.css"
 
 function ResetPassword(){
   return (
-    <div class="flex h-screen bg-purple-700">
-        <div class="w-1/2 bg-white p-10">
+    <div class="w-ull
+            lg:flex lg:h-screen ">
+        <div class="w-full bg-white p-4
+                    lg:w-1/2 lg:bg-white lg:p-10">
         <span className="bg-gray-100 text-sm p-2 text-blue-500 rounded-lg">E241</span>
             <h2 class="text-2xl font-bold mb-5 mt-20">Réinitialisation de mot de passe </h2>
-            <p className="text-gray-300 py-4">N'utiliser pas de mot de passe difficile à utiliser, ce serait <br /> un problème pour les gens.
+            <p className="text-gray-500 py-4">N'utiliser pas de mot de passe difficile à utiliser, ce serait <br /> un problème pour les gens.
             </p>
             <form action="">
                 <div class="mb-5">
@@ -26,7 +28,8 @@ function ResetPassword(){
 
         </div>
 
-    <div class="w-1/2  bg-[#38329E]  p-24 text-white flex flex-col justify-end div-img-3">
+    <div class=" hidden w-1/2  bg-[#38329E]  p-24 text-white flex flex-col justify-end div-img-3
+                lg:w-1/2  lg:bg-[#38329E]  lg:p-24 lg:text-white lg:flex lg:flex-col lg:justify-end lg:div-img-3">
         <h2 class="text-3xl font-bold mb-5">Ecole241 Business</h2>
         <p>Etudier en ligne devient plus facile <br /> Vous pouvez toujours étudier avec Ecole241 Business</p>
     </div>
