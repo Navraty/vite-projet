@@ -1,22 +1,22 @@
-import {Routes, Route, BrowserRouter} from "react-router-dom"
-import Connexion from './Components/Connexion';
-import Compte from './Components/Compte';
-import Mtp from './Components/Mtp'
-import Renitialisation from './Components/Renitialisation'
-function App(){
-  return(
-    <Layout>
+import React  from "react";
+import Signup from "./Components/Signup";
+import Login from "./Components/Login";
+import ForgotPassword from "./Components/ForgotPassword";
+import ResetPassword from "./Components/ResetPassword";
+import Dashboard from "./Components/Dashboard";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+export default function App(){
+  return (
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Connexion />}/>
-          <Route path='/Compte'element={<Compte/>}/>
-          <Route path='/Mtp'element={<Mtp/>}/>
-          <Route path='/Renitialisation'element={<Renitialisation/>}/>
+          <Route path="/" element={<Login />}/>
+          <Route path="/Signup" element={<Signup />} />
+          <Route path="/ForgotPassword" element={<ForgotPassword/>}/>
+          <Route path="/ResetPassword" element={<ResetPassword/>}/>
+          <Route path="/Dashboard" element={<Dashboard/>} />
         </Routes>
       </BrowserRouter>
-    </Layout>
-   
   )
 }
 
-export default App;
