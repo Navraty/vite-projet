@@ -19,6 +19,8 @@ import {BsBoxArrowInRight} from "react-icons/bs"
                     <li> <TbSquareLetterB/> Reservations</li> */}
                     <li>Vehicules</li>
                     <li>Reservations</li>
+                    <li>Restaurations</li>
+
                 </ul>
                 <div className="pt-[26em]">
                     <Link to="/"><button className="bg-gray-400 flex items-center gap-6 px-4 rounded-lg p-2"> <BsBoxArrowInRight/>

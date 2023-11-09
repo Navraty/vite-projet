@@ -6,9 +6,10 @@ import "../index.css"
   return (
     <div class="w-full
                 lg:flex lg:h-screen lg:bg-purple-700">
-        <div class="w-full bg-white p-4
+        <div class="w-full bg-white p-4 
                     lg:w-1/2 lg:bg-white lg:p-10">
-            <span className="bg-gray-100 text-sm p-2 text-blue-500 rounded-lg">E241</span>
+
+            <span className="bg-gray-100 text-sm p-2 text-blue-500 rounded-lg ">E241</span>
             <h2 class="text-2xl font-bold mb-5 mt-20">Connexion</h2>
             <form action="">
 
@@ -39,7 +40,7 @@ import "../index.css"
         <div className="hidden  w-1/2 bg-[#38329E] p-24 text-white flex flex-col justify-end div-img-1
                             lg:w-1/2 lg:bg-[#38329E] lg:p-24 lg:text-white lg:flex lg:flex-col lg:justify-end lg:div-img-1">
             <h2 class="text-gray-400">ECOLE241.BUSINESS</h2>
-            <p className="text-2xl font-semibold"> Etudier en ligne devient plus facile - <br /> Vous pouvez toujours étudier avec Ecole <br /> 241 Business</p>
+            <p className="text-2xl font-semibold"> Etudier en ligne devient plus facile - <br/> Vous pouvez toujours étudier avec Ecole <br /> 241 Business</p>
         </div>
     </div>
 
