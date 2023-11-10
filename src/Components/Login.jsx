@@ -1,37 +1,56 @@
 import React from "react";
 import { Link } from "react-router-dom"
 import "../index.css"
+// import { useState } from 'react';
 
  function Login(){
+
+    const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+
+    const formData = new FormData(form);
+
+    const email = formData.get("email");
+
+    const password = formData.get("password");
+    form.reset();
+
+    alert(`Email: ${email} Password: ${password}`);
+    
+};
+
   return (
-    <div class="w-full
+    <div className="w-full
                 lg:flex lg:h-screen lg:bg-purple-700">
-        <div class="w-full bg-white p-4 
+        <div className="w-full bg-white p-4 
                     lg:w-1/2 lg:bg-white lg:p-10">
 
             <span className="bg-gray-100 text-sm p-2 text-blue-500 rounded-lg ">E241</span>
-            <h2 class="text-2xl font-bold mb-5 mt-20">Connexion</h2>
-            <form action="">
+            <h2 className="text-2xl font-bold mb-5 mt-20">Connexion</h2>
 
-                <div class="mb-5">
-                    <label for="email" class="block mb-2">Email</label>
-                    <input type="email" id="email" class="w-full border border-gray-300 p-2 rounded-md" placeholder="Votre email"/>
+            <form onSubmit={handleSubmit}>
+
+                <div className="mb-5">
+                    <label className="block mb-2">Email</label>
+                    <input name="email" type="email" id="email" className="w-full border border-gray-300 p-2 rounded-md" placeholder="Votre email"/>
                 </div>
 
-                <div class="mb-5">
+                <div className="mb-5">
                     <div className="flex justify-between items-center">
                         <span>Mot de passe</span>
                         <span className="text-blue-600"><Link to="/ForgotPassword">Mot de passe oublié ?</Link></span>
                     </div>
-                    <input type="password" id="password" class="w-full border border-gray-300 p-2 rounded-md" placeholder="Votre mot de passe"/>
+                    <input name="password" type="password" id="password" className="w-full border border-gray-300 p-2 rounded-md" placeholder="Votre mot de passe"/>
                 </div>
 
-                <div class="mb-5">
+                <div className="mb-5">
                     <input type="checkbox" id="remember"/>
-                    <label for="remember" class="ml-2">Se souvenir de moi</label>
+                    <label for="remember" className="ml-2">Se souvenir de moi</label>
                 </div>
 
-                <Link to="/Dashboard"><button type="submit" class="w-full bg-blue-600 text-white p-2 rounded-md">Connexion</button></Link>
+                <button type="submit" className="w-full bg-blue-600  text-center text-white p-2 rounded-md">Connexion</button>
             </form>
 
             <span className="flex justify-between mt-8">Vous n'avez pâs un compte ? <Link to="/Signup" className="text-blue-600">Créez un c'est gratuit !</Link></span>
@@ -48,3 +67,6 @@ import "../index.css"
 }
 
 export default Login;
+
+
+  
